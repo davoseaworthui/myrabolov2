@@ -1,0 +1,17 @@
+<section>
+    <div class="section-wrapper">
+      <h1 class="section-header">I think I can help you, whether it be…</h1>
+      <div class="row banner-services" >
+        <div class="banner-service col-xs-12 col-md-4" *ngFor="let service of services">
+          <div class="banner-service--img-container" [style.background]>
+            <img class="banner-service--img" src="{{ service.imageCompanion }}"/>
+          </div>
+          <div class="banner-service-title">{{ service.description }}</div>
+        </div> 
+      </div>  
+      <div class="banner-cto">
+        <h2>I’m pretty sure you have something in mind.</h2>
+        <button mat-button class="col-xs-3">Let's Talk!</button>
+      </div>
+    </div>
+  </section>  

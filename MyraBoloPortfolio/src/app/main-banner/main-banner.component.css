@@ -1,0 +1,89 @@
+.banner {
+  height: 80%;
+  padding: 5% 3% 0 3%;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/myra-bolo-portfolio.appspot.com/o/1_VIM_0380.jpg?alt=media&token=aff76189-e575-41e2-96cf-03ea5a2da5b6");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.banner-intro {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #ffffffe8;
+  padding: 17px;
+  position: relative;
+  z-index: 20;
+}
+.banner-intro h2 {
+  font-weight: 200;
+}
+.banner-h2 {
+  font-size: 2em;
+}
+.banner-intro p {
+  font-weight: 100;
+}
+.banner-quote {
+  font-size: 3em;
+  font-family: "DM Serif Display", "Bodoni", serif;
+  width: 90%;
+  margin: 0 auto;
+  font-style: italic;
+  color: #555555;
+  padding: 1.2em 30px 1.2em 120px;
+  border-left: 8px solid #316d9f;
+  line-height: 1.6;
+  position: relative;
+  background: #eff1fef2;
+  font-weight: 100;
+  z-index: 10;
+}
+.banner-quote::before {
+  font-family: Arial;
+  content: "\201C";
+  color: #316d9f;
+  font-size: 4em;
+  position: absolute;
+  font-weight: 100;
+  left: 10px;
+  top: -10px;
+}
+.banner-quote::after {
+  content: "";
+}
+.banner-quote {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.banner-intro {
+  animation: fadeInAnimation ease-in 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.banner-image {
+  visibility: hidden;
+  width: 120%;
+  float: right;
+  z-index: 0;
+}
+@media screen and (max-width: 767px) {
+  .banner-image {
+    visibility: visible;
+  }
+  .banner {
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+  }
+}

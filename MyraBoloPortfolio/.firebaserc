@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "myra-bolo-portfolio": {
+      "hosting": {
+        "MyraBoloPortfolio": [
+          "myra-bolo-portfolio"
+        ]
+      }
+    }
+  }
+}
